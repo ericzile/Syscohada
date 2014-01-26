@@ -1,0 +1,216 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="30dp"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    tools:context=".MainActivity" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:src="@drawable/ressources" />
+	    
+	    <Button
+	        android:id="@+id/menu_classe1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:text="1. Ressources durables"
+	        android:textSize="14sp"
+	        android:background="#ffffff"
+	        android:textStyle="bold" />
+
+    </LinearLayout>
+
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/actifs" />
+	    
+	    <Button
+	        android:id="@+id/menu_classe2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:text="2. Actifs immobilisés"
+	        android:textSize="14sp"
+	        android:background="#ffffff"
+	        android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stocks" />
+	    
+	    <Button
+	        android:id="@+id/menu_classe3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:text="3. Stocks"
+	        android:textSize="14sp"
+	        android:background="#ffffff"
+	        android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tiers" />
+	    
+	    <Button
+	        android:id="@+id/menu_classe4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:text="4. Tiers    "
+	        android:textSize="14sp"
+	        android:background="#ffffff"
+	        android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tresorerie" />
+	    
+	    <Button
+	        android:id="@+id/menu_classe5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:text="5. Trésorerie"
+	 
+	        android:textSize="14sp"
+	        android:background="#ffffff"
+	        android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/charges" />
+	    
+	    <Button
+	        android:id="@+id/menu_classe6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:text="6. Charges des activités ordinaire"
+	     android:background="#ffffff"
+	        android:textSize="14sp"
+	        android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/produits" />
+	    
+	    <Button
+	        android:id="@+id/menu_classe7"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:text="7. Produits des activités ordinaire"
+	        android:textSize="14sp"
+	        android:background="#ffffff"
+	        android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/autres" />
+	    
+	    <Button
+	        android:id="@+id/menu_classe8"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="#ffffff"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:text="8. Autres charges et autres produits"
+	        
+	        android:textSize="14sp"
+	        android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

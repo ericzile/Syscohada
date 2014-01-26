@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gdg.miagegi.syscohada"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.gdg.miagegi.syscohada.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.gdg.miagegi.syscohada.MenuClasse"
+            android:label="@string/title_activity_menu_classe" >
+        </activity>
+        <activity
+            android:name="com.gdg.miagegi.syscohada.Liste"
+            android:label="@string/title_activity_liste" >
+        </activity>
+        <activity
+            android:name="com.gdg.miagegi.syscohada.Actif"
+            android:label="@string/title_activity_actif" >
+        </activity>
+        <activity
+            android:name="com.gdg.miagegi.syscohada.Ressource"
+            android:label="@string/title_activity_ressource" >
+        </activity>
+        <activity
+            android:name="com.gdg.miagegi.syscohada.Stocks"
+            android:label="@string/title_activity_stocks" >
+        </activity>
+        <activity
+            android:name="com.gdg.miagegi.syscohada.Tiers"
+            android:label="@string/title_activity_tiers" >
+        </activity>
+        <activity
+            android:name="com.gdg.miagegi.syscohada.Tresorerie"
+            android:label="@string/title_activity_tresorerie" >
+        </activity>
+        <activity
+            android:name="com.gdg.miagegi.syscohada.Charges"
+            android:label="@string/title_activity_charges" >
+        </activity>
+        <activity
+            android:name="com.gdg.miagegi.syscohada.Produits"
+            android:label="@string/title_activity_produits" >
+        </activity>
+        <activity
+            android:name="com.gdg.miagegi.syscohada.Autres"
+            android:label="@string/title_activity_autres" >
+        </activity>
+        <activity
+            android:name="com.gdg.miagegi.syscohada.About"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="com.gdg.miagegi.syscohada.MainActivity"
+             >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Syscoa</string>
+    <string name="action_settings">A propos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_menu_classe">Liste des classes</string>
+    <string name="title_activity_liste">Liste des comptes</string>
+    <string name="recherche">Rechercher Compte ..</string>
+    <string name="title_activity_actif">Comptes des actifs immobilisés</string>
+    <string name="title_activity_ressource">Comptes de ressources durables</string>
+    <string name="title_activity_stocks">Comptes de stocks</string>
+    <string name="title_activity_tiers">Comptes de tiers</string>
+    <string name="title_activity_tresorerie">Comptes de tresorerie</string>
+    <string name="title_activity_charges">Comptes de charges des Activités ordinaires</string>
+    <string name="title_activity_produits">Comptes de produits des activités ordinaires</string>
+    <string name="title_activity_autres">Comptes des autres charges et produits</string>
+    <string name="title_activity_about">A propos</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <EditText 
+        android:id="@+id/Recherche_charges"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/recherche"
+        android:inputType="number" />
+    
+    <ListView
+        android:id="@+id/liste_comptes_charges"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#C0AC42" 
+        android:dividerHeight="6dp"/>
+
+</LinearLayout>
