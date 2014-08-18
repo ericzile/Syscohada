@@ -17,5 +17,6 @@
     <string name="title_activity_autres">Comptes des autres charges et produits</string>
     <string name="title_activity_about">A propos</string>
     <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_engagement">Engagement</string>
 
 </resources>

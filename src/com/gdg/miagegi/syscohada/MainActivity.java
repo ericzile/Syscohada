@@ -34,27 +34,7 @@ public class MainActivity extends Activity {
          * */
  
         // Listening to News Feed button click
-        btn_classe.setOnClickListener(new View.OnClickListener() {
- 
-            @Override
-            public void onClick(View view) {
-                // Launching News Feed Screen
-                Intent i = new Intent(getApplicationContext(), MenuClasse.class);
-                startActivity(i);
-                
-            }
-        });
-        
-        btn_tous.setOnClickListener(new View.OnClickListener() {
-        	 
-            @Override
-            public void onClick(View view) {
-                // Launching News Feed Screen
-                Intent i = new Intent(getApplicationContext(), Liste.class);
-                startActivity(i);
-                
-            }
-        });
+       
 		return true;
 	}
 	public boolean onOptionsItemSelected(MenuItem item){
@@ -67,4 +47,19 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 		
 	}
+	//click compte par classe
+    public void clickClasse(View view) {
+        // Launching News Feed Screen
+        Intent i = new Intent(getApplicationContext(), MenuClasse.class);
+        startActivity(i);
+        
+    }
+
+    //click tous les comptes
+    public void clickListe(View view) {
+        // Launching News Feed Screen
+        Intent j = new Intent(getApplicationContext(), Liste.class);
+        startActivity(j);
+        
+    }
 }

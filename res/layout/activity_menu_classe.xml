@@ -11,29 +11,31 @@
     android:background="#ffffff"
     tools:context=".MainActivity" >
 
-    <LinearLayout 
+    <!-- Ajout de la propriete onClick dans les Button -->
+    
+  <LinearLayout 
         android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:orientation="horizontal" >
+	    android:orientation="vertical" >      
+	    
+	    <Button
+	        android:id="@+id/menu_classe1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="24dp"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:background="#ffffff"
+	        android:onClick="clickClasse1"
+	        android:text="1. Ressources durables"
+	        android:textSize="14sp"
+	        android:textStyle="bold" />
 
-        <ImageView
+	    <ImageView
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="TODO"
             android:src="@drawable/ressources" />
-	    
-	    <Button
-	        android:id="@+id/menu_classe1"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        
-	        android:layout_marginLeft="5dp"
-	        android:layout_marginTop="5dp"
-	        android:text="1. Ressources durables"
-	        android:textSize="14sp"
-	        android:background="#ffffff"
-	        android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -41,94 +43,83 @@
     <LinearLayout 
         android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:orientation="horizontal" 
-	    android:layout_gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/actifs" />
+	    android:orientation="vertical">     
 	    
 	    <Button
 	        android:id="@+id/menu_classe2"
 	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        
+	        android:layout_height="24dp"	        
 	        android:layout_marginLeft="5dp"
 	        android:layout_marginTop="5dp"
 	        android:text="2. Actifs immobilisés"
 	        android:textSize="14sp"
 	        android:background="#ffffff"
-	        android:textStyle="bold" />
+	        android:textStyle="bold" 
+	        android:onClick="clickClasse2"/>
+	    
+	    <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/actifs" />
 
     </LinearLayout>
     <LinearLayout 
         android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:orientation="horizontal" 
-	    android:layout_gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/stocks" />
+	    android:orientation="vertical">       
 	    
 	    <Button
 	        android:id="@+id/menu_classe3"
 	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        
+	        android:layout_height="24dp"	        
 	        android:layout_marginLeft="5dp"
 	        android:layout_marginTop="5dp"
 	        android:text="3. Stocks"
 	        android:textSize="14sp"
 	        android:background="#ffffff"
-	        android:textStyle="bold" />
+	        android:textStyle="bold" 
+	        android:onClick="clickClasse3"/>
+	    <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stocks" />
 
     </LinearLayout>
     <LinearLayout 
         android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:orientation="horizontal" 
-	    android:layout_gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/tiers" />
+	    android:orientation="vertical">       
 	    
 	    <Button
 	        android:id="@+id/menu_classe4"
 	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
+	        android:layout_height="24dp"
 	        
 	        android:layout_marginLeft="5dp"
 	        android:layout_marginTop="5dp"
 	        android:text="4. Tiers    "
 	        android:textSize="14sp"
 	        android:background="#ffffff"
-	        android:textStyle="bold" />
+	        android:textStyle="bold" 
+	        android:onClick="clickClasse4"/>
+	    <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tiers" />
 
     </LinearLayout>
     <LinearLayout 
         android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:orientation="horizontal" 
-	    android:layout_gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/tresorerie" />
+	    android:orientation="vertical">
 	    
 	    <Button
 	        android:id="@+id/menu_classe5"
 	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
+	        android:layout_height="24dp"
 	        
 	        android:layout_marginLeft="5dp"
 	        android:layout_marginTop="5dp"
@@ -136,81 +127,111 @@
 	 
 	        android:textSize="14sp"
 	        android:background="#ffffff"
-	        android:textStyle="bold" />
+	        android:textStyle="bold" 
+	        android:onClick="clickClasse5"/>
+	    
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tresorerie" />
+	    
 
     </LinearLayout>
     <LinearLayout 
         android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:orientation="horizontal" 
-	    android:layout_gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/charges" />
+	    android:orientation="vertical">      
 	    
 	    <Button
 	        android:id="@+id/menu_classe6"
 	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
+	        android:layout_height="24dp"
 	        
 	        android:layout_marginLeft="5dp"
 	        android:layout_marginTop="5dp"
 	        android:text="6. Charges des activités ordinaire"
-	     android:background="#ffffff"
+	        android:background="#ffffff"
 	        android:textSize="14sp"
-	        android:textStyle="bold" />
+	        android:textStyle="bold" 
+	        android:onClick="clickClasse6"/>
+	    
+	     <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/charges" />
 
     </LinearLayout>
     <LinearLayout 
         android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:orientation="horizontal" 
-	    android:layout_gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/produits" />
-	    
+	    android:orientation="vertical">
+            
 	    <Button
 	        android:id="@+id/menu_classe7"
 	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
+	        android:layout_height="24dp"
 	        android:layout_marginLeft="5dp"
 	        android:layout_marginTop="5dp"
 	        android:text="7. Produits des activités ordinaire"
 	        android:textSize="14sp"
 	        android:background="#ffffff"
-	        android:textStyle="bold" />
+	        android:textStyle="bold"
+	        android:onClick="clickClasse7" />
+	    <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/produits" />
 
     </LinearLayout>
     <LinearLayout 
         android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:orientation="horizontal" 
-	    android:layout_gravity="center">
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/autres" />
+	    android:orientation="vertical">        
 	    
 	    <Button
 	        android:id="@+id/menu_classe8"
 	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
+	        android:layout_height="24dp"
 	        android:background="#ffffff"
 	        android:layout_marginLeft="5dp"
 	        android:layout_marginTop="5dp"
 	        android:text="8. Autres charges et autres produits"
 	        
 	        android:textSize="14sp"
-	        android:textStyle="bold" />
+	        android:textStyle="bold" 
+	        android:onClick="clickClasse8"/>
+	    <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/autres" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">        
+	    
+	    <Button
+	        android:id="@+id/menu_classe9"
+	        android:layout_width="wrap_content"
+	        android:layout_height="24dp"
+	        android:background="#ffffff"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="5dp"
+	        android:text="9. Engagement Hors bilan"
+	        
+	        android:textSize="14sp"
+	        android:textStyle="bold" 
+	        android:onClick="clickClasse9"/>
+	    <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/engagement" />
 
     </LinearLayout>
 </LinearLayout>

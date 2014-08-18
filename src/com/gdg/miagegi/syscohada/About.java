@@ -17,19 +17,7 @@ public class About extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		Button btn_cancel = (Button) findViewById(R.id.cancel);
-		 // Listening to News Feed button click
-        btn_cancel.setOnClickListener(new View.OnClickListener() {
- 
-            @Override
-            public void onClick(View view) {
-                // Launching News Feed Screen
-                Intent i = new Intent(getApplicationContext(), MainActivity.class);
-                startActivity(i);
-                
-            }
-        });
+		
 		getMenuInflater().inflate(R.menu.about, menu);
 		return true;
 	}

@@ -22,6 +22,7 @@ public class Liste extends Activity {
 	private ListView lv;
     ArrayAdapter<String> adapter;
     EditText inputSearch;
+    String edit;
      
      
     // ArrayList for Listview
@@ -31,7 +32,7 @@ public class Liste extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_liste);
 		
-		String liste_comptes[] = {
+		final String liste_comptes[] = {
 				"10 - CAPITAL",
 				"101 -- CAPITAL SOCIAL",
 				"1011 --- Capital souscrit, non appelé",
@@ -1239,7 +1240,59 @@ public class Liste extends Activity {
 "895 -- IMPÔT MINIMUM FORFAITAIRE (I.M.F.) ",
 "899 -- DÉGRÈVEMENTS ET ANNULATIONS D’IMPÔTS SUR RÉSULTATS ANTÉRIEURS ",
 "8991 --- Dégrèvements ",
-"8994 --- Annulations pour pertes rétroactives "
+"8994 --- Annulations pour pertes rétroactives ",
+"90 - ENGAGEMENTS OBTENUS ET ENGAGEMENTS ACCORDÉS",
+"901 -- ENGAGEMENTS DE FINANCEMENT OBTENUS" ,
+"9011 --- Crédits confirmés obtenus ",
+"9012 --- Emprunts restant à encaisser",
+"9013 --- Facilités de financement renouvelables", 
+"9014 --- Facilités d'émission ",
+"9018 --- Autres engagements de financement obtenus", 
+"902 --- ENGAGEMENTS DE GARANTIE OBTENUS",
+"9021 --- Avals obtenus",
+"9022 ---bCautions, garanties obtenues", 
+"9023 --- Hypothèques obtenues",
+"9024 --- Effets endossés par des tiers", 
+"9028 --- Autres garanties obtenues",
+"903 -- ENGAGEMENTS RÉCIPROQUES",
+"9031 --- Achats de marchandises à terme", 
+"9032 --- Achats à terme de devises",
+"9033 --- Commandes fermes des clients", 
+"9038 --- Autres engagements réciproques", 
+"904 -- AUTRES ENGAGEMENTS OBTENUS",
+"9041 --- Abandons de créances conditionnels", 
+"9043 --- Ventes avec clause de réserve de propriété", 
+"9048 --- Divers engagements obtenus",
+"905 -- ENGAGEMENTS DE FINANCEMENT ACCORDÉS", 
+"9051 --- Crédits accordés non décaissés",
+"9058 --- Autres engagements de financement accordés", 
+"906 -- ENGAGEMENTS DE GARANTIE ACCORDÉS",
+"9061 --- Avals accordés",
+"9062 --- Cautions, garanties accordées",
+"9063 --- Hypothèques accordées",
+"9064 --- Effets endossés par l'entreprise",
+"9068 --- Autres garanties accordées",
+"907 -- ENGAGEMENTS RÉCIPROQUES",
+"9071 --- Ventes de marchandises à terme",
+"9072 --- Ventes à terme de devises",
+"9073 --- Commandes fermes aux fournisseurs", 
+"9078 --- Autres engagements réciproques",
+"907 -- AUTRES ENGAGEMENTS ACCORDÉS",
+"9081 --- Annulations conditionnelles de dettes", 
+"9082 --- Engagements de retraite",
+"9083 --- Achats avec clause de réserve de propriété",
+"9088 --- Divers engagements accordés",
+"91 - CONTREPARTIES DES ENGAGEMENTS",
+"911 à 914 -- CONTREPARTIE DES ENGAGEMENTS OBTENUS, 901 à 904",
+"915 à 918 -- CONTREPARTIE DES ENGAGEMENTS ACCORDÉS, 905 à 908",
+"92 - COMPTES REFLECHIS",
+"93 - COMPTES DE RECLASSEMENTS", 
+"94 - COMPTES DE COÛTS",
+"95 - COMPTES DE STOCKS", 
+"96 - COMPTES D'ECARTS SUR COUTS PREETABLIS", 
+"97 - COMPTES DE DIFFERENCES DE TRAITEMENT COMPTABLE",  
+"98 - COMPTES DE RESULTATS",
+"99 - COMPTES DE LIAISONS INTERNES"
 	};
 		lv = (ListView) findViewById(R.id.liste_comptes_tous);
         inputSearch = (EditText) findViewById(R.id.Recherche_tous);
@@ -1250,7 +1303,30 @@ public class Liste extends Activity {
              
             @Override
             public void onTextChanged(CharSequence cs, int arg1, int arg2, int arg3) {
-               Liste.this.adapter.getFilter().filter(cs);  
+                
+				ArrayAdapter<String> edit3;
+				edit = String.valueOf(cs);
+				ArrayList<String> edit2 = new ArrayList<String>();
+
+				if(edit.isEmpty()){
+
+					edit3 = new ArrayAdapter<String>(Liste.this, R.layout.list_item, R.id.nom_compte, liste_comptes);
+					lv.setAdapter(adapter);
+
+				}
+				else
+				{
+					for(int i=0;i<liste_comptes.length;i++){
+						if(liste_comptes[i].toLowerCase().indexOf(edit) != -1){
+
+							edit2.add(liste_comptes[i]);
+						}
+
+						edit3 = new ArrayAdapter<String>(Liste.this, R.layout.list_item, R.id.nom_compte, edit2);
+						lv.setAdapter(edit3);
+					}
+				}
+
             }
              
             @Override

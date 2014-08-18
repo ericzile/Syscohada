@@ -5,16 +5,17 @@
     android:orientation="vertical" >
     
     <EditText 
-        android:id="@+id/Recherche_tous"
+        android:id="@+id/Recherche_engagement"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/recherche" />
+        android:hint="@string/recherche"
+        android:inputType="number" />
     
     <ListView
-        android:id="@+id/liste_comptes_tous"
-        android:layout_width="match_parent"
+        android:id="@+id/liste_comptes_engagement"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:divider="#1E90FF" 
-        android:dividerHeight="2dp"
-    	android:focusable="false" />
+        android:divider="#00ff00" 
+        android:dividerHeight="6dp"/>
+
 </LinearLayout>
